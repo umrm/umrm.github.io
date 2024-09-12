@@ -4,98 +4,300 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uma</title>
-    <style>
-        body {
-            font-family: Calibri;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        h1, h2, h3 {
-            margin: 10px 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        .portfolio-item {
-            background-color: #fff;
-            border-radius: 5px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .portfolio-item a {
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <header>
-        <h1>Uma Maheswar Reddy Maram</h1>
-        <p>Computer Science Student</p>
-    </header>
-
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>As an enthusiastic Computer Science student, I possess a strong background in Python, machine learning, and data science. My track record includes successfully solving complex problems and delivering innovative solutions. I am currently seeking a summer internship to contribute fresh perspectives and advance technology.</p>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python, Java, SQL</li>
-                <li>Tensorflow/Pytorch, Numpy, Pandas</li>
-                <li>Data Processing, Data Analytics</li>
-                <li>Azure Cloud, Google Cloud</li>
-                <li>Machine Learning, Deep Learning</li>
+    <nav id="desktop-nav">
+        <div class="logo">Uma Maram</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
-
-        <section id="portfolio">
-            <h2>Projects</h2>
-            <div class="portfolio-item">
-                <h3>Real-time Hand Gesture Recognition Using TensorFlow and OpenCV</h3>
-                <p>Description: Our innovative project introduces a real-time hand gesture recognition system that seamlessly integrates MediaPipe, TensorFlow, and OpenCV technologies. By leveraging MediaPipe’s sophisticated hand tracking, our system accurately detects 21 key hand landmarks. These landmarks are then processed by a pre-trained neural network to classify an array of 10 unique hand gestures. Our extensive testing on a tailored dataset of hand gesture imagery has resulted in a remarkable 95% accuracy rate. The system’s versatility is demonstrated through its potential applications in virtual reality interfaces, sign language translation, and interactive music creation, marking a significant advancement in human-computer interaction.</p>
-                <a href="#">Link to Project</a>
+        </div>
+    </nav> 
+    <nav id="hamburger-nav">
+        <div class="logo">Uma Maram</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-
-            <div class="portfolio-item">
-                <h3>Parking Lot Ticket Management System Using Java and SQL</h3>
-                <p>Description: In a collaborative effort, we designed and implemented a scalable Java application tailored for parking lot ticket management. This system stands out for its efficiency, reducing ticket processing time by 20% when compared to traditional manual systems. Our team’s synergy was pivotal in ensuring the project’s timely completion and successful implementation, reflecting our commitment to innovation and operational excellence.</p>
-                <a href="#">Link to Project</a>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>   
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Uma Maram Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Uma Maram</h1>
+            <p class="section__text__p2">Machine Learning Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+                    Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact Info</button>
             </div>
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <p>MulticoreWare - Research Intern</p>
-            <ul>
-                <li>Created an unique and innovative object detection and segmentation algorithm using deep learning techniques</li>
-                <li>Trained a custom YOLO model on road images and achieved 89% accuracy and optimal speed in detecting and identifying vehicles, pedestrians, and traffic signs</li>
-                <li>Measured the performance of the models using standard and reliable metrics such as mean average precision (mAP), intersection over union (IoU), and frames per second (FPS) and compared them with the state-of-the-art benchmarks</li>
-                <li>Demonstrated practical and scalable real-time capabilities by running the model on a Raspberry Pi and a webcam, processing 30 frames per second, and detecting 10 objects per frame</li>
-                
-            </ul>
-
-        <section id="education">
-            <h2>Education</h2>
-            <p>Bachelor's Degree in Computer Science, University of Toledo, 2026</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me via email at <a href="mailto:umr4002@gmail.com">umr4002@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/umamaram" target="_blank">LinkedIn</a>.</p>
-        </section>
-    </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My linkedin Profile"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/umamaram/'">
+                <img
+                src="./assets/github.png" 
+                alt="My Github"
+                class="icon" 
+                onclick="location.href='https://github.com/umrm'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/about-pic.jpg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>2+ years <br />AI & ML Development</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>Bachelor of Science<br />Computer Science and Engineering</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                As an enthusiastic Computer Science student, I possess a strong background 
+                in Python, machine learning, and data science. My track record includes 
+                successfully solving complex problems and delivering innovative solutions. 
+                I am currently seeking a summer internship to contribute fresh perspectives 
+                and advance technology
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" 
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Machine Learning</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                  <div>
+                    <h3>Python</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                  <div>
+                    <h3>SQL</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                  <div>
+                    <h3>PyTorch</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                  <div>
+                    <h3>Tensorflow</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                  <div>
+                    <h3>Microsoft Azure</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                  <div>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Machine Learning</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                  <div>
+                    <h3>Machine Learning</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                  <div>
+                    <h3>Data Analytics</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                  <div>
+                    <h3>Power BI</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                  <div>
+                    <h3>OpenCV</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                  <div>
+                    <h3>Web Development</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                  <div>
+                    <h3>Microsoft Office Suite</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" 
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-pic.png" alt="project 1" class="project-img">
+          </div>
+          <h2 class="'experience-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://www.github.com/umrm'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://www.github.com/umrm'">
+            Live Demo
+          </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-pic.png" alt="project 2" class="project-img">
+          </div>
+          <h2 class="'experience-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://www.github.com/umrm'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://www.github.com/umrm'">
+            Live Demo
+          </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-pic.png" alt="project 3" class="project-img">
+          </div>
+          <h2 class="'experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://www.github.com/umrm'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://www.github.com/umrm'">
+            Live Demo
+          </button>
+          </div>
+        </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" 
+      onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+          <p><a href="mailto:umr4002@gmail.com">umr4002@gmail.com</p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon"/>
+          <p><a href="https://www.linkedin.com/in/umamaram/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Uma Maram. All rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
