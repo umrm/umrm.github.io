@@ -3,8 +3,11 @@
         height: 83vh;
         margin-bottom: 6rem;
     }
-    .about_container {
+    .about-containers {
        flex-wrap: wrap;
+    }
+    .project-containers{
+        flex-wrap: wrap;
     }
     #contact, #projects {
         height: fit-content;
@@ -18,7 +21,7 @@
     #hamburger-nav {
         display: flex;
     }
-    #experience, .experience-details-container {
+    #experience, .experience-details-container, .project-details-container {
         margin-top: 2rem;
     }
     #profile, .section-container {
@@ -58,7 +61,7 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
-    .about-containers, .contact-info-upper-container,
+    .about-containers, .project-containers, .contact-info-upper-container,
     .btn-container {
         flex-wrap: wrap;
     }
