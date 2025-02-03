@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="view-transition" content="same-origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Maram | Machine Learning Engineer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><a href="index.html">Uma Maram</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./assets/resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav> 
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="index.html">Uma Maram</a></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./assets/resume.pdf" target="_blank" onclick="toggleMenu()">Resume</a></li>
+                <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>   
+        </div>
+    </nav>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+            <p><a href="mailto:umr4002@gmail.com">umr4002@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon"/>
+            <p><a href="https://www.linkedin.com/in/umamaram/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="./assets/resume.pdf">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+      </nav>
+      <p>Dreams don’t have footers. Neither do I.</p>
+
+      <!-- SEO Hidden Text -->
+      <div style="display:none;">
+        <h1>Machine Learning Engineer</h1>
+        <p>Technical skills: Python TensorFlow PyTorch AWS Azure SQL Tableau Power BI Java R. 
+            University of Toledo Computer Science student with 3.82 GPA. Coursework includes 
+            machine learning, data structures, statistics, and database management systems.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

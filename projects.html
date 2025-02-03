@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="view-transition" content="same-origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Maram | Machine Learning Engineer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><a href="index.html">Uma Maram</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./assets/resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav> 
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="index.html">Uma Maram</a></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./assets/resume.pdf" target="_blank" onclick="toggleMenu()">Resume</a></li>
+                <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>   
+        </div>
+    </nav>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="project-container">
+            <div class="project-details-container">
+                <div class="project-content-container">
+                    <h3 class="project-title">Music Generation Using Deep Learning</h3>
+                    <div class="project-content">
+                        <div class="project-text">
+                            <p>Developed an advanced deep learning model in TensorFlow utilizing LSTM architecture  
+                                to generate piano compositions, trained on a diverse dataset of over 5,000 classical  
+                                pieces. Enhanced note transitions and harmonies by integrating sequence attention  
+                                mechanisms for improved realism. Currently expanding the project to support  
+                                multi-instrument compositions by leveraging Transformer models and multi-track  
+                                datasets, enabling the generation of dynamic and richly orchestrated musical pieces.
+                                </p>
+                        </div>
+                        <div class="project-image">
+                            <img src="assets/project_image_01.jpg" alt="Project One img" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content-container">
+                    <h3 class="project-title">Real-Time Hand Gesture Recognition</h3>
+                    <div class="project-content">
+                        <div class="project-text">
+                            <p>
+                                Developed a real-time hand gesture recognition system leveraging MediaPipe, TensorFlow,  
+                                and OpenCV. The system detects 21 hand keypoints and classifies 10 distinct gestures  
+                                using a pre-trained neural network, achieving 95% accuracy on a custom dataset. Designed  
+                                for applications such as VR control, sign language translation, and music creation, this  
+                                project highlights my expertise in computer vision, deep learning, and real-time  
+                                interactive systems.
+                            </p>
+                        </div>
+                        <div class="project-image">
+                            <img src="assets/project_image_02.jpg" alt="Project One img" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content-container">
+                    <h3 class="project-title">
+                        Sentimental Analysis using NLP
+                    </h3>
+                    <div class="project-content">
+                        <div class="project-text">
+                            <p>
+                                Designed a Sentiment Analysis system leveraging advanced Natural Language Processing  
+                                (NLP) techniques to classify text as positive, negative, or neutral, extracting valuable  
+                                insights from sources like social media, customer reviews, and feedback. Utilizing machine  
+                                learning and deep learning models such as TF-IDF, word embeddings, LSTMs, and transformers,  
+                                this project demonstrates expertise in text analytics, AI-driven decision-making, and real-  
+                                world applications like brand sentiment tracking and automated content moderation.
+                            </p>
+                        </div>
+                        <div class="project-image">
+                            <img src="assets/project_image_03.jpg" alt="Project One img" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="./assets/resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+      </nav>
+      <p>This footer is where ideas go to rest. But only for a little while.</p>
+
+      <!-- SEO Hidden Text -->
+       <div style="display:none;">
+        <h1>Machine Learning Engineer</h1>
+        <p>Technical skills: Python TensorFlow PyTorch AWS Azure SQL Tableau Power BI Java R. 
+            University of Toledo Computer Science student with 3.82 GPA. Coursework includes 
+            machine learning, data structures, statistics, and database management systems.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
